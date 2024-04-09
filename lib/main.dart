@@ -28,29 +28,37 @@ int add(int a, int b){
   return sum;
 }
 
-List<int> numbers=[1,2,3,4,5];
+// List<int> numbers=[1,2,3,4,5];
 List<String> names=["goki","parvan","ranjith","masani","mathi"];
 
 
-void printNumbers(){
-  for (int i=0;i<numbers.length;i++){
-    print(numbers[i]);
-  }
-}
-void printNames(){
-  for (int i=0;i<names.length;i++){
-    print(names[i]);
-  }
-}
+// void printNumbers(){
+//   for (int i=0;i<numbers.length;i++){
+//     print(numbers[i]);
+//   }
+// }
+// void printNames(){
+//   for (int i=0;i<names.length;i++){
+//     print(names[i]);
+//   }
+// }
+Set<String> uniqueNames ={"Gokila","ranjith","masani"};
+
+Map users={
+  'name':"gokilavani",
+  'age':22,
+  'height':156,
+};
 
   @override
   Widget build(BuildContext context) {
-       greet();
-       greetPerson(56);
-     int mysum=add(1,5);
-     print(mysum);
-     printNumbers();
-      printNames();
+    //    greet();
+    //    greetPerson(56);
+    //  int mysum=add(1,5);
+    //  print(mysum);
+    //  printNumbers();
+      // printNames();
+      print(users['name']);
   //   String grade ="s";
 
   //   if(age > 18){
