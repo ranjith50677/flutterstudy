@@ -28,7 +28,20 @@ int add(int a, int b){
   return sum;
 }
 
-List number=[1,2,3,4,5];
+List<int> numbers=[1,2,3,4,5];
+List<String> names=["goki","parvan","ranjith","masani","mathi"];
+
+
+void printNumbers(){
+  for (int i=0;i<numbers.length;i++){
+    print(numbers[i]);
+  }
+}
+void printNames(){
+  for (int i=0;i<names.length;i++){
+    print(names[i]);
+  }
+}
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +49,8 @@ List number=[1,2,3,4,5];
        greetPerson(56);
      int mysum=add(1,5);
      print(mysum);
+     printNumbers();
+      printNames();
   //   String grade ="s";
 
   //   if(age > 18){
