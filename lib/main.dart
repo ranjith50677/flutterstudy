@@ -1,30 +1,28 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:studycase/pages/firt_page.dart';
 
 void main() {
   runApp( MyApp());
   
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// ignore: must_be_immutable
+class MyApp extends StatelessWidget {     
+ const MyApp({super.key});
 
+
+void userTapped(){
+  print("User Tapped");
+}
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor:  Colors.deepPurple[200],
-        body: Container(
-          height: 300,
-          width: 300,
-          color: Colors.green,
-          decoration: BoxDecoration(),
-          padding: EdgeInsets.all(25),
-          child: Text("Gokila"),
-        ),
-      ),
-    );
+      home: FirstPage(), 
+      );
+   
+    
   }
 }
