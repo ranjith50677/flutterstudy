@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:studycase/pages/firt_page.dart';
+import 'package:studycase/pages/second_page.dart';
 
 void main() {
   runApp( MyApp());
@@ -13,14 +14,18 @@ class MyApp extends StatelessWidget {
  const MyApp({super.key});
 
 
-void userTapped(){
-  print("User Tapped");
-}
+// void userTapped(){
+//   print("User Tapped");
+// }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstPage(), 
+      home: FirstPage(),
+      routes: {
+        '/firstPage':(context) => FirstPage(),
+        '/secondPage':(context) => SecondPage(),
+      }, 
       );
    
     
