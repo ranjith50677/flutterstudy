@@ -5,6 +5,7 @@ import 'package:studycase/pages/counter_page.dart';
 import 'package:studycase/pages/firt_page.dart';
 import 'package:studycase/pages/home_page.dart';
 import 'package:studycase/pages/setting_page.dart';
+import 'package:studycase/pages/todo_page.dart';
 // import 'package:studycase/pages/second_page.dart';
 
 void main() {
@@ -18,7 +19,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CounterPage(),
+      debugShowCheckedModeBanner: false,
+      home: ToDoPage(),
+      // home: CounterPage(),
     );
   }
 }

@@ -29,12 +29,15 @@ class _CounterPageState extends State<CounterPage> {
         children: [        
           // ignore: prefer_const_constructors
           Text("Counter: ",
-          style: TextStyle(fontSize: 30)),
+          style: TextStyle(fontSize: 30)
+           ),
           Text(_counter.toString(),
           style: TextStyle(fontSize: 30),
           ),
-          ElevatedButton(onPressed: _increment, child: Text("Increment")),
-          FilledButton(onPressed: _decrement, child: Text("Decrement")),
+          ElevatedButton(onPressed: _increment, child: Text("Increment")
+          ),
+          FilledButton(onPressed: _decrement, child: Text("Decrement")
+          ),
         ],
 
         ),
